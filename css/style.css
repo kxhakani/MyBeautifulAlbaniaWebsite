@@ -1,0 +1,309 @@
+/****************************
+CSS Reset
+****************************/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Start*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #000;
+	background-color: rgba(121,200,252,0.5);
+}
+
+h1 {
+	font-family: 'Dr Sugiyama', sans-serif;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	color: #fff;
+}
+
+h2 {
+    font-size: 40px;
+	padding: 25px;
+}
+
+h3 {
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+p{
+	line-height: 1.8;
+	padding: 45px;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+h2 {
+	color:#DD7E97;
+	font-weight: 600;
+	font-size: 50px;
+}
+
+
+video {
+	width: 50%;
+	height: 45%;
+	margin : 30px 0px;
+}
+
+small, a {
+text-decoration: none;
+color: #fff;
+}
+
+.color {
+	background-color: rgb(121,199,250);
+}
+
+.resetImage {
+	width: 40%;
+	height: 40%;
+	position: center;
+	margin: 0 auto;	
+}
+
+.smallColumn p {
+	padding:0;
+	margin: 0 auto;
+}
+
+nav {
+	background-color:#DD7E97;
+}
+
+nav  a {
+    color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+
+nav  a:active, a:hover{
+	background-color: #cf4a6d;
+}
+
+footer {
+	text-align: center;
+	background-color:#DD7E97;
+	height: 36px;
+    padding: 35px;
+	color: #fff;
+}
+
+#container{
+	width: 1074px;
+	text-align: center;
+}
+
+.smallColumn {
+	width: 200px; 
+	text-align: center;
+	margin: 5px;
+	padding: 24px;
+	display: inline-block;
+}
+
+.smallColumn img{
+	display: block;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+    padding-bottom: 24px;
+	padding-top: 24px;
+}
+
+.blueSection {
+	background-color: rgb(121,199,250);
+	padding:45px;
+}
+
+.blueSection img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 65%;
+	height: 40%;
+}
+
+.blueSection h3 {
+		color:#fff;
+}
+
+.lightBlueSection {
+	padding:45px;
+}
+   
+.lightBlueSection img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 70%;
+	height: 70%;
+}
+
+.toggleNav {
+    display:none;
+}
+
+.menu {
+    padding: 40px 20px;
+}
+
+.menu ul {
+    display: inline-block;
+}
+
+.menu li {
+    margin: 0px 50px 0px 50px;
+    float: left;
+    font-size: 25px;
+}
+
+
+
+
+@media only screen and (min-width:220px) {
+
+#container {
+    width: 100%;
+    max-width: 320px;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+.menu {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 10px 15px;
+}
+
+nav a {
+	font-size: 20px;
+	display: inline;
+}
+
+.imageReset, video {
+	width: 100%;
+	height: 100%;
+}
+
+p{
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+}
+
+
+}
+
+
+@media only screen and (min-width:321px){
+
+#container {
+        max-width:767px;
+		
+    }
+
+h1 {
+        font-size:44px;
+    }
+	
+nav a {
+	font-size: 25px;
+	padding: 20px;
+}
+
+}
+
+@media only screen and (min-width:768px){
+
+#container {
+        width: 100%;
+        max-width: 2000px;
+		
+    }
+
+h1 {
+        font-size:60px;
+    }
+	
+nav a {
+	font-size: 30px;
+}
+
+}
+
+
